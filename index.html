@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#24070e">
+  <meta name="description" content="Маленький романтический сюрприз для самого дорогого человека.">
+  <title>Для тебя ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient-glow glow-one"></div>
+  <div class="ambient-glow glow-two"></div>
+  <div id="hearts" class="hearts" aria-hidden="true"></div>
+
+  <main class="page">
+    <section id="startScreen" class="screen start-screen">
+      <div class="rose rose-left" aria-hidden="true">🌹</div>
+      <div class="rose rose-right" aria-hidden="true">🌹</div>
+
+      <div class="intro">
+        <p class="eyebrow"><span></span> Для самой особенной <span></span></p>
+        <div class="tiny-heart">♥</div>
+        <h1>Моя любимая</h1>
+        <div class="outline-heart">♡</div>
+        <p class="intro-text">
+          Есть люди, которые делают мир светлее.<br>
+          Ты — одна из них…
+        </p>
+        <button id="openBtn" class="main-button" type="button">
+          <span>♥</span> Открыть моё послание
+        </button>
+        <p class="hint">Нажми — для тебя есть кое-что особенное</p>
+        <div class="down-heart" aria-hidden="true">⌄</div>
+      </div>
+    </section>
+
+    <section id="letterScreen" class="screen letter-screen" hidden>
+      <article class="letter">
+        <div class="letter-heart">♥</div>
+        <p class="letter-kicker">Только для тебя</p>
+        <h2>Моё послание тебе</h2>
+        <div class="divider"><span>♥</span></div>
+        <p>Ты — одно из самых прекрасных событий в моей жизни. Рядом с тобой даже обычные дни становятся особенными.</p>
+        <p>Спасибо за твою улыбку, за тепло, которое ты даришь, и за то чувство, когда на душе становится спокойно просто от мысли о тебе.</p>
+        <p>Я хочу быть рядом, поддерживать тебя, радоваться твоим успехам и вместе создавать много счастливых воспоминаний.</p>
+        <p class="final-words">Я очень сильно тебя люблю! <span>♥</span></p>
+        <p class="signature">Твой человек ❤️</p>
+        <button id="closeBtn" class="small-button" type="button">× Закрыть послание</button>
+      </article>
+    </section>
+
+    <section id="endScreen" class="screen end-screen" hidden>
+      <div class="end-heart">♡</div>
+      <p class="eyebrow">От всего сердца</p>
+      <h2>Спасибо, что ты есть…</h2>
+      <div class="divider"><span>♡</span></div>
+      <p>Ты — моё маленькое большое счастье.</p>
+      <button id="againBtn" class="main-button" type="button">♥ Прочитать ещё раз</button>
+      <p class="signature">Обнимаю тебя мысленно ❤️</p>
+    </section>
+
+    <footer>Сделано с любовью <span>♥</span></footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
