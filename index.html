@@ -4,109 +4,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#17152f">
-  <meta name="description" content="Особенное послание для Эльзаны от Мырзабека">
+  <meta name="theme-color" content="#170d2b">
   <title>Для Эльзаны ❤️</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <div class="stars" aria-hidden="true"></div>
+  <div id="floatingHearts" aria-hidden="true"></div>
 
-  <main class="page">
+  <main class="card">
     <div class="moon" aria-hidden="true">☾</div>
+    <p class="eyebrow">ОДНО ПОСЛАНИЕ ДЛЯ ТЕБЯ</p>
 
-    <section class="card">
-      <div class="top-label">ОТ ВСЕГО СЕРДЦА</div>
+    <h1>Эльзана, это для тебя ❤️</h1>
+    <p class="intro">
+      Иногда даже самые важные слова сложно сказать вслух…
+      Поэтому я решил оставить их здесь, только для тебя.
+    </p>
 
-      <div class="heart" aria-hidden="true">♥</div>
-
-      <h1>Эльзана, ты особенная ❤️</h1>
-
-      <p class="subtitle">
-        Некоторые люди становятся дорогими даже на расстоянии.
-      </p>
-
-      <div class="line"></div>
-
-      <p class="message">У меня есть кое-что для тебя… 💌</p>
-
-      <p class="description">
-        Эльзана, я давно хотел сказать тебе кое-что искреннее.
-        Возможно, я не всегда умею правильно выражать свои чувства,
-        но мне хочется, чтобы ты знала, что ты для меня особенная.
-      </p>
-
-      <p class="description">
-        Мне приятно общаться с тобой, узнавать тебя всё больше
-        и видеть твою улыбку. Иногда я представляю, как было бы
-        здорово встретиться, поговорить с тобой вживую и просто
-        провести немного времени рядом.
-      </p>
-
-      <p class="description">
-        Да, между нами расстояние. Я не могу просто прийти,
-        посмотреть тебе в глаза или обнять тебя, когда захочется.
-        Но даже через экран ты умеешь поднимать мне настроение
-        и заставлять улыбаться.
-      </p>
-
-      <p class="description">
-        И есть ещё кое-что, что я хочу сказать честно:
-        <strong>ты мне очень нравишься, Эльзана.</strong>
-        Мои чувства к тебе — не просто слова, которые я написал
-        ради красивой открытки. Я действительно дорожу тобой.
-      </p>
-
-      <p class="description">
-        Я не хочу торопить тебя или заставлять отвечать тем же.
-        Мне важно, чтобы тебе было комфортно со мной.
-        Я просто хочу быть искренним и не скрывать то,
-        что у меня на сердце.
-      </p>
-
+    <div class="envelope-area">
       <button
-        id="surpriseButton"
-        class="surprise-button"
+        class="envelope-button"
+        id="envelopeButton"
         type="button"
-        aria-expanded="false">
-        Для тебя есть ещё слова 💗
+        aria-label="Открыть письмо"
+        aria-expanded="false"
+        aria-controls="loveLetter"
+      >
+        <span class="envelope" id="envelope">
+          <span class="letter-preview">Для тебя, Эльзана ♡</span>
+          <span class="envelope-back"></span>
+          <span class="envelope-paper"></span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-front"></span>
+          <span class="envelope-heart">♥</span>
+        </span>
+        <span class="envelope-caption" id="envelopeCaption">
+          Нажми, чтобы открыть письмо 💌
+        </span>
       </button>
+    </div>
 
-      <div id="secretMessage" class="secret-message" hidden>
-        <span class="secret-heart">💖</span>
+    <section class="letter" id="loveLetter" hidden>
+      <div class="letter-inner">
+        <p class="letter-date">Маленькое письмо от сердца ♡</p>
+        <h2>Дорогая Эльзана…</h2>
 
         <p>
-          Эльзана, я тебя люблю. ❤️
+          Не знаю, как правильно подобрать слова, но мне хочется,
+          чтобы ты знала одну вещь.
         </p>
 
         <p>
-          Не знаю, что ждёт нас впереди, но я рад, что ты появилась
-          в моей жизни. Мне хочется однажды встретиться с тобой,
-          увидеть твою улыбку рядом и создать воспоминания,
-          которые будут греть нас даже спустя время.
+          Ты стала для меня особенным человеком. Даже когда между
+          нами расстояние, мысли о тебе способны сделать мой день
+          теплее и подарить улыбку.
         </p>
 
-        <p class="wish">
-          Береги себя, улыбайся чаще и оставайся собой. 🌙
+        <p>
+          Мне нравится думать о тебе, узнавать тебя и представлять,
+          как однажды мы сможем разделить много красивых моментов.
+          Мне не нужны идеальные слова — мне хочется быть искренним
+          с тобой.
         </p>
-      </div>
 
-      <div class="signature">
-        <span>С искренними чувствами,</span>
-        <strong>Твой Мырзабек ❤️</strong>
+        <p>
+          Я не хочу торопить события. Просто хочу, чтобы ты знала:
+          ты мне очень дорога, и мои чувства к тебе настоящие. ❤️
+        </p>
+
+        <p class="letter-signature">
+          С теплом и нежностью,<br>
+          тот, кто думает о тебе ♡
+        </p>
+
+        <button class="surprise-button" id="surpriseButton" type="button"
+          aria-expanded="false" aria-controls="secretMessage">
+          Здесь есть ещё кое-что… 💗
+        </button>
+
+        <div class="secret-message" id="secretMessage" hidden>
+          <div class="secret-heart">♥</div>
+          <h3>Эльзана, ты особенная ❤️</h3>
+          <p>
+            Я хочу продолжать узнавать тебя, дарить тебе улыбки
+            и создавать воспоминания, которые будут греть наши сердца.
+          </p>
+          <p class="final-words">Ты мне очень нравишься. ❤️</p>
+        </div>
       </div>
     </section>
 
     <p class="footer">
-      Даже большое расстояние не мешает искренним чувствам ✨
+      Даже расстояние не мешает искренним чувствам ✨
     </p>
   </main>
-
-  <div
-    id="floatingHearts"
-    class="floating-hearts"
-    aria-hidden="true">
-  </div>
 </body>
 </html>
